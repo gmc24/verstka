@@ -68,7 +68,7 @@
     letter-spacing: 0.68px;
 }
 
-.my_acc {
+.my_acc_btn {
     display: inline-block;
     text-align: center;
     width: 133px;
@@ -84,10 +84,10 @@
     text-decoration: none;
 }
 
-.my_acc > i, .sb-cat-btn > i, .all-items-btn > i {
+.my_acc_btn > i, .sb-cat-btn > i, .all-items-btn > i {
     margin-left: 9px;
 }
-.my_acc:hover {
+.my_acc_btn:hover {
     background: #f16d7f;
     background: -moz-linear-gradient(top,  #f16d7f 0%, #f16d7f 40%, #d36170 100%);
     background: -webkit-linear-gradient(top,  #f16d7f 0%,#f16d7f 40%,#d36170 100%);
