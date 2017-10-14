@@ -566,6 +566,38 @@
     }
 }
 
+/*Блок заголовка и крошек*/
+.red-head {
+    height: 148px;
+    background-color: #f8f3f4;
+}
+.red-head h1 {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.breadcrumbs, .breadcrumbs > a {
+    font-family: Lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #636363;
+    font-weight: 300;
+}
+.breadcrumbs > a:hover {
+    border-bottom: 1px solid #636363;
+}
+.breadcrumbs, .breadcrumbs > a::after {
+    content: ' / ';
+    display: inline-block;
+}
+.breadcrumbs .cur-page {
+    color: #f16d7f;
+    font-weight: 700;
+}
+
 /*SLIDER*/
 .slider {
     background-color: #e8e8e8;
