@@ -56,6 +56,7 @@
                     <li><a href="#" class="active-link">Home</a></li>
                     <li class="has-submenu">
                         <a href="#">Man</a>
+
                         <div class="mega_menu">
                             <div class="mm-wrapper">
                                 <div class="mm-cat-header">
@@ -129,7 +130,8 @@
                                             <div class="feature-item">
                                                 <div class="f-thmb">
                                                     <div class="hover-cart-btn">
-                                                        <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                                                        <a href="#" class="hover-add-to-cart"><span
+                                                                class="spritecart2"></span>Add to Cart</a>
                                                     </div>
                                                     <div class="overlay-bg"></div>
                                                     <div class="f-img"><img src="img/01.jpg" alt="mango people t-shirt">
@@ -145,7 +147,8 @@
                                             <div class="feature-item">
                                                 <div class="f-thmb">
                                                     <div class="hover-cart-btn">
-                                                        <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                                                        <a href="#" class="hover-add-to-cart"><span
+                                                                class="spritecart2"></span>Add to Cart</a>
                                                     </div>
                                                     <div class="overlay-bg"></div>
                                                     <div class="f-img"><img src="img/08.jpg" alt=""></div>
@@ -162,11 +165,13 @@
                         </div>
                     </li>
                     <li class="has-submenu"><a href="#">Women</a>
+
                         <div class="mega_menu">
 
                         </div>
                     </li>
                     <li class="has-submenu"><a href="#">Kids</a>
+
                         <div class="mega_menu">
 
                         </div>
@@ -183,7 +188,94 @@
 <div class="red-head">
     <div class="container flex-box">
         <h1>New Arrivals</h1>
+
         <div class="breadcrumbs"><a href="">Home</a><a href="">Men</a><span class="cur-page">New Arrivals</span></div>
+    </div>
+</div>
+
+<div class="checkout-block">
+    <div class="container">
+        <div class="step-by-step">
+            <div>
+                <input id="step-1" name="checkout-01" type="radio" checked/>
+                <label for="step-1">01. shipping address</label>
+                <article class="two-cols">
+                    <div>
+
+                        <h3>check as a guest or register</h3>
+                        <p>Register with us for future convenience</p>
+
+                        <div class="cb-radio-group">
+                            <div><input id="guest" type="radio" name="signin"/><label for="guest">checkout as
+                                guest</label></div>
+                            <div><input id="reg" type="radio" name="signin" checked/><label for="reg">register</label>
+                            </div>
+                        </div>
+
+                        <h3>register and save time!</h3>
+                        <p>Register with us for future convenience</p>
+                        <br>
+                        <p class="plus-arrow">Fast and easy checkout</p>
+                        <p class="plus-arrow">Easy access to your order history and status</p>
+
+                        <a href="#" class="checkout-btn">continue</a>
+
+                    </div>
+                    <div>
+                        <form id="login_form" action="#">
+                            <h3>Already registed?</h3>
+                            <p>Please log in below</p>
+
+                            <div class="cb-input-group">
+                                <p class="req-tip">* Required Fields</p>
+                                <input type="password" id="cb-pwd" required placeholder=" " pattern="^[0-9a-zA-z_]{6,}$" tabindex="2">
+                                <label for="cb-pwd">Password</label>
+                                <input type="email" id="cb-email" required placeholder=" " pattern="^.+@.+\..*$" tabindex="1">
+                                <label for="cb-email">Email address</label>
+
+                            </div>
+                            <input type="submit" href="#" class="checkout-btn" value="Login" tabindex="3"><a class="pasw-remind" href="#">Forgot Password?</a>
+                        </form>
+                    </div>
+                </article>
+
+            </div>
+            <div>
+                <input id="step-2" name="checkout-01" type="radio"/>
+                <label for="step-2">02. billing information</label>
+                <article>
+                    <h3>шаг второй</h3>
+                </article>
+            </div>
+            <div>
+                <input id="step-3" name="checkout-01" type="radio"/>
+                <label for="step-3">03. shipping information</label>
+                <article>
+                    <h3>шаг третий</h3>
+                </article>
+            </div>
+            <div>
+                <input id="step-4" name="checkout-01" type="radio"/>
+                <label for="step-4">04. shipping method</label>
+                <article>
+                    <h3>шаг четвертый</h3>
+                </article>
+            </div>
+            <div>
+                <input id="step-5" name="checkout-01" type="radio"/>
+                <label for="step-5">05. payment method</label>
+                <article>
+                    <h3>шаг пятый</h3>
+                </article>
+            </div>
+            <div>
+                <input id="step-6" name="checkout-01" type="radio"/>
+                <label for="step-6">06. order review</label>
+                <article>
+                    <h3>шаг шестой</h3>
+                </article>
+            </div>
+        </div>
     </div>
 </div>
 
