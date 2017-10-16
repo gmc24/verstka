@@ -2,19 +2,24 @@
     font-family: Lato;
     box-sizing: border-box;
 }
+a:focus, a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
 
 .header, .slider, .main_content, .footer {
     display: block;
     position: relative;
 }
 
-.header hr {
+.header-hr {
     /*    height: 101px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);*/
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
     margin: 0;
 }
 
+/*
 .container {
     display: block;
     width: 1200px;
@@ -22,6 +27,7 @@
     padding: 0 30px;
     height: 100%;
 }
+*/
 
 .clearfix:after {
     content: "";
@@ -56,9 +62,13 @@
     display: flex;
     align-items: center;
 }
+.search-block .input-group-addon, .input-group-btn {
+width: auto;
+}
 
 .header-right {
     align-items: flex-end;
+    justify-content: flex-end;
     padding: 31px 0;
 }
 
@@ -94,11 +104,11 @@
     line-height: 32px;
     letter-spacing: 0.68px;
     padding: 25px 0;
-    margin-right: 37px;
+    /*margin-right: 37px;*/
 }
 
 .logo .spritelogo {
-    margin-right: 13px;
+    margin-right: 10px;
 }
 
 .logo span {
@@ -132,7 +142,7 @@
 }
 
 .acc_menu {
-    display: flex;
+ /*display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
@@ -142,9 +152,9 @@
     top: 39px;
     width: 210px;
     height: 204px;
-    background-color: #fff;
+ */   background-color: #fff;
     border: 2px solid #f16d7f;
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 .acc_block:hover {
@@ -218,7 +228,7 @@
 }
 
 .search-block {
-
+    padding: 31px 0;
 }
 
 .sb-cat-btn {
@@ -304,8 +314,17 @@
     opacity: 1;
     transition-duration: 1s;
 }
+.btn.sb-search-btn {
+    margin: 0;
+    padding: 0;
+}
+.search-block > .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: 0;
 
-.sb-search-btn {
+}
+
+.btn.sb-search-btn {
     color: #a4a4a4;
     font-family: FontAwesome;
     font-size: 14px;
@@ -329,7 +348,7 @@
 
 }
 
-.sb-input {
+.sb-input.form-control {
     border: 1px solid #e6e6e6;
     height: 38px;
     width: 279px;
@@ -339,9 +358,10 @@
     font-size: 14px;
     font-weight: 300;
     padding: 0 16px;
+    box-shadow: none;
 }
 
-.sb-input {
+.sb-input.form-control {
     outline: none;
 }
 

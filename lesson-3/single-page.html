@@ -2,53 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Checkout</title>
+    <title>Single Page</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="header">
-    <div class="container flex-box">
 
-        <div class="search-block">
-            <a href="index.html" class="logo"><span class="spritelogo"></span> BRAN<span>D</span></a>
-
-            <div class="choose-catalog">
-                <ul class="cat-popup">
-                    <li><a href="#">All Items</a></li>
-                    <li><a href="#">Man</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Hot deals</a></li>
-                    <li><a href="#">Outlet</a></li>
-                </ul>
-                <a class="sb-cat-btn" href="#">Browse<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <!--Верх шапки-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 text-left">
+                <a href="../lesson-2/index.html" class="logo"><span class="spritelogo"></span> BRAN<span>D</span></a>
             </div>
-            <input type="search" class="sb-input" placeholder="Search for item...">
-            <a class="sb-search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-        </div>
-        <div class="header-right">
+            <div class="col-lg-6">
+                <div class="search-block input-group">
+                    <div class="input-group-btn">
+                        <div class="dropdown">
+                            <a class="sb-cat-btn dropdown-toggle" data-toggle="dropdown" href="#">Browse <i
+                                    class="caret"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">All Items</a></li>
+                                <li><a href="#">Man</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Kids</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Hot deals</a></li>
+                                <li><a href="#">Outlet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="search" class="form-control sb-input" placeholder="Search for item..." aria-label="Search for...">
+                    <div class="input-group-btn">
+                        <button class="btn sb-search-btn" href="#" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right col-lg-4">
             <a class="shop-cart" href="#"><span class="cart-badge">3</span><span class="spritecart"></span></a>
 
-            <div class="acc_block">
-                <ul class="acc_menu">
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">My orders</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Bonus card</a></li>
-                    <li>
-                        <div class="am_last_item"><a href="#">Sign in</a> || <a href="#">Create account</a></div>
-                    </li>
-                </ul>
-                <a class="my_acc_btn" href="#">My Account<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <div class="dropdown">
+                        <a href="#" class="my_acc_btn dropdown-toggle" data-toggle="dropdown">My Account<i class="caret"></i></a>
+                        <ul class="acc_menu dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">My orders</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Bonus card</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="am_last_item"><a href="#">Sign in</a> || <a href="#">Create account</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
             </div>
         </div>
     </div>
     <hr class="header-hr">
+
+    <!--Блок основной навигации-->
     <div class="nav-block">
         <div class="container">
             <div class="nav">
@@ -185,6 +202,7 @@
     </div>
 </div>
 
+    <!--Блок заголовка и крошек-->
 <div class="red-head">
     <div class="container flex-box">
         <h1>New Arrivals</h1>
@@ -193,91 +211,6 @@
     </div>
 </div>
 
-<div class="checkout-block">
-    <div class="container">
-        <div class="step-by-step">
-            <div>
-                <input id="step-1" name="checkout-01" type="radio" checked/>
-                <label for="step-1">01. shipping address</label>
-                <article class="two-cols">
-                    <div>
-
-                        <h3>check as a guest or register</h3>
-                        <p>Register with us for future convenience</p>
-
-                        <div class="cb-radio-group">
-                            <div><input id="guest" type="radio" name="signin"/><label for="guest">checkout as
-                                guest</label></div>
-                            <div><input id="reg" type="radio" name="signin" checked/><label for="reg">register</label>
-                            </div>
-                        </div>
-
-                        <h3>register and save time!</h3>
-                        <p>Register with us for future convenience</p>
-                        <br>
-                        <p class="plus-arrow">Fast and easy checkout</p>
-                        <p class="plus-arrow">Easy access to your order history and status</p>
-
-                        <a href="#" class="checkout-btn">continue</a>
-
-                    </div>
-                    <div>
-                        <form id="login_form" action="#">
-                            <h3>Already registed?</h3>
-                            <p>Please log in below</p>
-
-                            <div class="cb-input-group">
-                                <p class="req-tip">* Required Fields</p>
-                                <input type="password" id="cb-pwd" required placeholder=" " pattern="^[0-9a-zA-z_]{6,}$" tabindex="2">
-                                <label for="cb-pwd">Password</label>
-                                <input type="email" id="cb-email" required placeholder=" " pattern="^.+@.+\..*$" tabindex="1">
-                                <label for="cb-email">Email address</label>
-
-                            </div>
-                            <input type="submit" href="#" class="checkout-btn" value="Login" tabindex="3"><a class="pasw-remind" href="#">Forgot Password?</a>
-                        </form>
-                    </div>
-                </article>
-
-            </div>
-            <div>
-                <input id="step-2" name="checkout-01" type="radio"/>
-                <label for="step-2">02. billing information</label>
-                <article>
-                    <h3>шаг второй</h3>
-                </article>
-            </div>
-            <div>
-                <input id="step-3" name="checkout-01" type="radio"/>
-                <label for="step-3">03. shipping information</label>
-                <article>
-                    <h3>шаг третий</h3>
-                </article>
-            </div>
-            <div>
-                <input id="step-4" name="checkout-01" type="radio"/>
-                <label for="step-4">04. shipping method</label>
-                <article>
-                    <h3>шаг четвертый</h3>
-                </article>
-            </div>
-            <div>
-                <input id="step-5" name="checkout-01" type="radio"/>
-                <label for="step-5">05. payment method</label>
-                <article>
-                    <h3>шаг пятый</h3>
-                </article>
-            </div>
-            <div>
-                <input id="step-6" name="checkout-01" type="radio"/>
-                <label for="step-6">06. order review</label>
-                <article>
-                    <h3>шаг шестой</h3>
-                </article>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="testimonials test_bg">
     <div class="test_overlay">
@@ -364,5 +297,9 @@
         </div>
     </div>
 </div>
+
+<!--Include JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
