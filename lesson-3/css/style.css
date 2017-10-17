@@ -39,9 +39,13 @@ a:focus, a:hover {
 
 .flex-box {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
     align-items: center;
+}
+.flex-right {
+    justify-content: flex-end;
+}
+.flex-left {
+    justify-content: flex-start;
 }
 
 .sprite-ico3, .sprite-ico1, .sprite-ico2
@@ -373,8 +377,15 @@ width: auto;
     color: #a4a4a4;
 }
 
-.nav {
+.navbar {
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius: none;
+    margin: 0;
     z-index: 500;
+}
+#navbarNavDropdown {
+    display: flex !important;
 }
 
 .nav > ul {
@@ -383,7 +394,7 @@ width: auto;
     list-style-type: none;
     justify-content: center;
     margin: 0 auto;
-    width: 800px;
+    /*width: 800px;*/
 }
 
 .nav > ul > li {
@@ -402,7 +413,7 @@ width: auto;
     text-decoration: none;
 }
 
-.active-link {
+.nav-item.active {
     border-bottom: 3px solid #ef5ba7;
     transition-duration: 0.2s;
 }
@@ -412,11 +423,11 @@ width: auto;
     transition-duration: 0.2s;
 }
 
-.nav-block {
-    width: 100%;
+.nav-block > .row {
     position: relative;
-    margin-bottom: 1px;
     z-index: 900;
+    /*width: 100%;*/
+    /*margin-bottom: 1px;*/
 }
 
 .has-submenu {
@@ -597,23 +608,36 @@ width: auto;
     font-size: 24px;
     font-weight: 900;
     text-transform: uppercase;
+    line-height: 1em;
+    padding: 62px 0;
+    margin: 0;
 }
-.breadcrumbs, .breadcrumbs > a {
+.breadcrumb, .breadcrumb > a {
     font-family: Lato;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
     color: #636363;
     font-weight: 300;
+    line-height: 1em;
+    padding: 67px 0;
 }
-.breadcrumbs > a:hover {
-    border-bottom: 1px solid #636363;
+.breadcrumb > a:hover {
+    /*border-bottom: 1px solid #636363;*/
+    text-decoration: underline;
 }
-.breadcrumbs, .breadcrumbs > a::after {
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #868e96;
+    content: "/";
+}
+/*.breadcrumb, .breadcrumb > a::after {
     content: ' / ';
     display: inline-block;
-}
-.breadcrumbs .cur-page {
+}*/
+.breadcrumb-item.active {
     color: #f16d7f;
     font-weight: 700;
 }
