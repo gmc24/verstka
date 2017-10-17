@@ -1391,9 +1391,9 @@ outline: none;
 .footer-widgets {
     padding: 110px 0 90px;
     background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: flex-start;*/
 }
 
 .fw-desc > .desc-text {
@@ -1411,13 +1411,6 @@ outline: none;
 .fw-desc > .desc-text > p {
     margin-bottom: 2em;
 }
-
-.fw-company, .fw-info, .fw-cat-menu {
-    width: 200px;
-    margin-left: 25px;
-
-}
-
 .footer-widgets .fw-title {
     color: #f16d7f;
     font-family: Lato;
@@ -1450,11 +1443,13 @@ outline: none;
     border-bottom: 1px solid #898989;
 }
 
+/*
 .footer-widgets > .fw-company {
     margin-left: 60px;
 }
+*/
 
-.footer .container-fluid {
+footer .copy {
     height: 79px;
     background-color: #e6e6e6;
 }
