@@ -378,9 +378,7 @@ width: auto;
 }
 
 .navbar {
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    border-radius: none;
+      border-radius:  0;
     margin: 0;
     z-index: 500;
 }
@@ -1199,9 +1197,7 @@ outline: none;
 .test_bg {
     width: 100%;
     height: 438px;
-    background: linear-gradient(rgba(247, 247, 248, 0.5), rgba(247, 247, 248, 0.5)), url("../img/testimonials-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    background: linear-gradient(rgba(247, 247, 248, 0.5), rgba(247, 247, 248, 0.5)), url("../img/testimonials-bg.jpg") no-repeat bottom center;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
@@ -1223,7 +1219,6 @@ outline: none;
     width: 1px;
     height: 438px;
     color: #e6e6e6;
-    background-color: #e6e6e6;
     margin: auto 0 auto 50%;
     border: 0 none;
     /*border-left: 1px solid #e6e6e6;*/
@@ -1467,7 +1462,7 @@ outline: none;
 }
 */
 
-footer .copy {
+.footer .copy {
     height: 79px;
     background-color: #e6e6e6;
 }
