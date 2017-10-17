@@ -1454,28 +1454,32 @@ outline: none;
     margin-left: 60px;
 }
 
-.copyrights {
-    width: 100%;
+.footer .container-fluid {
     height: 79px;
     background-color: #e6e6e6;
-    margin: 0 auto;
 }
 
-.copyrights > .container > span {
+.copyrights {
+    display: inline-block;
     height: 14px;
     color: #7a7a7a;
     font-family: Lato;
     font-size: 16px;
     font-weight: 400;
+    line-height: 14px;
+    padding: 33px 0 32px;
 }
 
 .footer-socials {
-    width: 192px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*width: 192px;*/
+    display: inline-block;
+    padding: 24px 0 23px;
 }
 
+.footer-socials > a:not(:last-child) {
+    margin-right: 6px;
+
+}
 .footer-socials > a {
     text-decoration: none;
     display: inline-block;
