@@ -267,15 +267,44 @@
                         <dd>binburhan</dd>
                     </dl>
                     <div class="prod-price">561</div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-12 prod-to-cart text-center">
+                            <div class="choose-prod-block">
+                                <div class="prod-choose-color">
+                                    <h4>choose color</h4>
+                                    <select name="color" id="ch-color" required>
+                                        <option value="Red" selected>Red</option>
+                                        <option value="Black">Black</option>
+                                        <option value="Violet">Violet</option>
+                                    </select>
+                                </div>
+                                <div class="prod-choose-size">
+                                    <h4>choose size</h4>
+                                    <select name="size" id="ch-size" required>
+                                        <option value="XS">XS</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL" selected>XXL</option>
+                                    </select>
+                                </div>
+                                <div class="prod-quantity">
+                                    <h4>quantity</h4>
+                                    <input type="text" class="" id="ch-quantity" pattern="\d+" required >
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-default btn-block prod-to-cart-btn red"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-3"></div>
             </div>
-            <div class="choose-prod-block">
-                <div class="prod-choose-color"></div>
-                <div class="prod-choose-size"></div>
-                <div class="prod-quantity"></div>
-            </div>
-            <a href="#" class="prod-to-cart" role="button">Add to Cart</a>
         </div>
     </div>
 
