@@ -7,7 +7,8 @@
     <!--<link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/scss/style2.css">
@@ -232,81 +233,86 @@
 
 <!--основной блок страницы -->
 <main>
-    <div class="container-fluid product-item-slider">
-        <div class="row">
-            <div class="container text-center">
-                <div class=" col-md-12">
-                    <ul class="item-slider-wrapper">
-                        <li class="slide-01"><img src="img/single-main.jpg" alt="slide number one"></li>
-                        <li class="slide-02 notinview"><img class="flipped" src="img/single-main.jpg" alt="slide number two"></li>
-                    </ul>
+    <div class="container-fluid product-slider">
+
+        <div class="prod-slider-wrapper">
+            <input type="radio" name="img-XXX" id="prod_img_1" checked="checked">
+            <div>
+                <img src="img/single-main.jpg" alt="slide number one">
             </div>
+            <label for="prod_img_2" class="slider-nav-left">&lt;</label>
+            <label for="prod_img_2" class="slider-nav-right">&gt;</label>
+
+            <input type="radio" name="img-XXX" id="prod_img_2">
+            <div>
+                <img src="img/single-main2.jpg" alt="slide number two">
+            </div>
+            <label for="prod_img_1" class="slider-nav-left">&lt;</label>
+            <label for="prod_img_1" class="slider-nav-right">&gt;</label>
         </div>
-        <nav class="slider-nav">
-            <a href="#" class="slider-nav-left">&lt;</a>
-            <a href="#" class="slider-nav-right">&gt;</a>
-        </nav>
-        </div>
+
     </div>
 
-
-        <div class="container product-info-block">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 text-center nopads">
-                    <h2 class="prod-info-cat">women collection</h2>
-                    <h3 class="prod-info-title">moschino cheap and chic</h3>
-                    <p class="prod-info-desc">Compellingly actualize fully researched processes before proactive
-                        outsourcing.
-                        Progressively syndicate collaborative architectures before cutting-edge services. Completely
-                        visualize
-                        parallel core competencies rather than exceptional portals. </p>
-                    <dl class="prod-info-char">
-                        <dt>material:</dt>
-                        <dd>cotton</dd>
-                        <dt>designer:</dt>
-                        <dd>binburhan</dd>
-                    </dl>
-                    <div class="prod-price">561</div>
-
+    <div class="container product-info-block">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center nopads">
+                <h2 class="prod-info-cat">women collection</h2>
+                <h3 class="prod-info-title">moschino cheap and chic</h3>
+                <p class="prod-info-desc">Compellingly actualize fully researched processes before proactive
+                    outsourcing.
+                    Progressively syndicate collaborative architectures before cutting-edge services. Completely
+                    visualize
+                    parallel core competencies rather than exceptional portals. </p>
+                <dl class="prod-info-char">
+                    <dt>material:</dt>
+                    <dd>cotton</dd>
+                    <dt>designer:</dt>
+                    <dd>binburhan</dd>
+                </dl>
+                <div class="prod-price">561</div>
 
 
-                    <div class="row">
-                        <div class="col-md-12 prod-to-cart text-center">
-                            <div class="choose-prod-block">
-                                <div class="prod-choose-color">
-                                    <h4>choose color</h4>
-                                    <select class="selectpicker" data-width="146px" name="color" id="ch-color" required>
-                                        <option data-content="<i class='fa fa-stop red' aria-hidden='true'></i>Red" value="Red" selected>Red</option>
-                                        <option data-content="<i class='fa fa-stop black' aria-hidden='true'></i>Black" value="Black">Black</option>
-                                        <option data-content="<i class='fa fa-stop violet' aria-hidden='true'></i>Violet" value="Violet">Violet</option>
-                                    </select>
-                                </div>
-                                <div class="prod-choose-size">
-                                    <h4>choose size</h4>
-                                    <select class="selectpicker" data-width="146px" name="size" id="ch-size" required>
-                                        <option value="XS">XS</option>
-                                        <option value="S">S</option>
-                                        <option value="M">M</option>
-                                        <option value="L">L</option>
-                                        <option value="XL">XL</option>
-                                        <option value="XXL" selected>XXL</option>
-                                    </select>
-                                </div>
-                                <div class="prod-quantity">
-                                    <h4>quantity</h4>
-                                    <input type="text" class="" id="ch-quantity" pattern="\d+" required >
-                                </div>
+                <div class="row">
+                    <div class="col-md-12 prod-to-cart text-center">
+                        <div class="choose-prod-block">
+                            <div class="prod-choose-color">
+                                <h4>choose color</h4>
+                                <select size="3" class="selectpicker" data-width="146px" name="color" id="ch-color" required>
+                                    <option data-content="<i class='fa fa-stop red' aria-hidden='true'></i>Red" selected>Red
+                                    </option>
+                                    <option data-content="<i class='fa fa-stop black' aria-hidden='true'></i>Black">Black
+                                    </option>
+                                    <option data-content="<i class='fa fa-stop violet' aria-hidden='true'></i>Violet">Violet
+                                    </option>
+                                </select>
                             </div>
-
-                            <button type="submit" class="btn btn-default btn-block prod-to-cart-btn red"><span>Add to Cart</span></button>
+                            <div class="prod-choose-size">
+                                <h4>choose size</h4>
+                                <select size="6" class="selectpicker" data-width="146px" name="size" id="ch-size" required>
+                                    <option>XS</option>
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                    <option selected>XXL</option>
+                                </select>
+                            </div>
+                            <div class="prod-quantity">
+                                <h4>quantity</h4>
+                                <input type="text" class="" id="ch-quantity" pattern="\d+" required>
+                            </div>
                         </div>
-                    </div>
 
+                        <button type="submit" class="btn btn-default btn-block prod-to-cart-btn red">
+                            <span>Add to Cart</span></button>
+                    </div>
                 </div>
-                <div class="col-md-3"></div>
+
             </div>
+            <div class="col-md-3"></div>
         </div>
+    </div>
 
     <div class="product-upsale container">
         <div class="row">
@@ -314,58 +320,66 @@
                 <h3>you may like also</h3>
             </div>
             <div class="row text-center">
-                <div class="col-md-3"><div class="feature-item">
-                    <div class="f-thmb">
-                        <div class="hover-cart-btn">
-                            <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                <div class="col-md-3">
+                    <div class="feature-item">
+                        <div class="f-thmb">
+                            <div class="hover-cart-btn">
+                                <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                            </div>
+                            <div class="overlay-bg"></div>
+                            <div class="f-img"><img src="img/single-1.jpg" alt="mango people t-shirt"></div>
                         </div>
-                        <div class="overlay-bg"></div>
-                        <div class="f-img"><img src="img/single-1.jpg" alt="mango people t-shirt"></div>
-                    </div>
-                    <div class="f-desc">
-                        <div class="f-title">BLAZE LEGGINGS</div>
-                        <div class="f-price">52.00</div>
-                    </div>
-                </div></div>
-                <div class="col-md-3"><div class="feature-item">
-                    <div class="f-thmb">
-                        <div class="hover-cart-btn">
-                            <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                        <div class="f-desc">
+                            <div class="f-title">BLAZE LEGGINGS</div>
+                            <div class="f-price">52.00</div>
                         </div>
-                        <div class="overlay-bg"></div>
-                        <div class="f-img"><img src="img/single-2.jpg" alt=""></div>
                     </div>
-                    <div class="f-desc">
-                        <div class="f-title">ALEXA SWEATER </div>
-                        <div class="f-price">52.00</div>
-                    </div>
-                </div></div>
-                <div class="col-md-3"><div class="feature-item">
-                    <div class="f-thmb">
-                        <div class="hover-cart-btn">
-                            <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item">
+                        <div class="f-thmb">
+                            <div class="hover-cart-btn">
+                                <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                            </div>
+                            <div class="overlay-bg"></div>
+                            <div class="f-img"><img src="img/single-2.jpg" alt=""></div>
                         </div>
-                        <div class="overlay-bg"></div>
-                        <div class="f-img"><img src="img/single-3.jpg" alt=""></div>
-                    </div>
-                    <div class="f-desc">
-                        <div class="f-title">AGNES TOP</div>
-                        <div class="f-price">52.00</div>
-                    </div>
-                </div></div>
-                <div class="col-md-3"><div class="feature-item">
-                    <div class="f-thmb">
-                        <div class="hover-cart-btn">
-                            <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                        <div class="f-desc">
+                            <div class="f-title">ALEXA SWEATER</div>
+                            <div class="f-price">52.00</div>
                         </div>
-                        <div class="overlay-bg"></div>
-                        <div class="f-img"><img src="img/single-4.jpg" alt=""></div>
                     </div>
-                    <div class="f-desc">
-                        <div class="f-title">SYLVA SWEATER</div>
-                        <div class="f-price">52.00</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item">
+                        <div class="f-thmb">
+                            <div class="hover-cart-btn">
+                                <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                            </div>
+                            <div class="overlay-bg"></div>
+                            <div class="f-img"><img src="img/single-3.jpg" alt=""></div>
+                        </div>
+                        <div class="f-desc">
+                            <div class="f-title">AGNES TOP</div>
+                            <div class="f-price">52.00</div>
+                        </div>
                     </div>
-                </div></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item">
+                        <div class="f-thmb">
+                            <div class="hover-cart-btn">
+                                <a href="#" class="hover-add-to-cart"><span class="spritecart2"></span>Add to Cart</a>
+                            </div>
+                            <div class="overlay-bg"></div>
+                            <div class="f-img"><img src="img/single-4.jpg" alt=""></div>
+                        </div>
+                        <div class="f-desc">
+                            <div class="f-title">SYLVA SWEATER</div>
+                            <div class="f-price">52.00</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
