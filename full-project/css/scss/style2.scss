@@ -2052,6 +2052,7 @@ a:focus, a:hover {
 }
 
 main {
+  margin-bottom: 90px;
   .filters {
     h3 {
       font-family: $mfontfam;
@@ -2103,7 +2104,7 @@ main {
         font-size: 14px;
         font-weight: 400;
         text-transform: uppercase;
-        margin-right: 20px;
+        margin-right: 18px;
         cursor: pointer;
         position: relative;
         &::before {
@@ -2123,11 +2124,89 @@ main {
 
   }
 
+  .sort {
+    height: 50px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    .input-group {
+      display: inline-block;
+      &:not(:last-of-type) {
+        margin-right: 15px;
+      }
+      .input-group-addon, .btn-group button {
+        height: 30px;
+        background-color: white;
+        border: 1px solid #ebebeb;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        color: #6f6e6e;
+        font-family: $mfontfam;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+      .input-group-addon {
+        display: inline-block;
+        width: auto;
+        border-right: 0;
+        padding: 0 8px 0 12px;
+      }
+      .btn-group {
+        display: inline-block;
+        margin-left: -2px;
+        button:focus {
+          outline: none !important;
+        }
+        &.fit-width .dropdown-toggle .caret {
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          margin-top: -2px;
+          vertical-align: middle;
+        }
+        &.fit-width .dropdown-toggle .filter-option {
+          position: relative;
+          margin-right: 20px;
+        }
+        button {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
   .products .feature-item {
     margin-bottom: 20px;
   }
 
   .products-footer {
+
+    .pagination {
+      border: 1px solid #ebebeb;
+      border-radius: 3px;
+      li>a, li>span>i {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-left: -1px;
+        line-height: 1.42857143;
+        text-decoration: none;
+         background-color:  transparent;
+         border: 0;
+          font-family: $mfontfam;
+          font-size: 16px;
+          font-weight: 300;
+        color: #c4c4c4;
+
+        &:hover, &.active-page {
+          color: #ef5b70;
+        }
+
+      }
+    }
 
     .va-btn {
       display: inline-block;
@@ -2300,3 +2379,7 @@ main {
   }
 }
 
+section .prem {
+  height: 341px;
+  background-color: #222224;
+}

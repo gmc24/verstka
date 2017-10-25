@@ -1713,74 +1713,137 @@ a:focus, a:hover {
   -o-transform: scaleX(-1);
   transform: scaleX(-1); }
 
-main .filters h3 {
-  font-family: Lato, sans-serif;
-  color: #6f6e6e;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase; }
-main .filters ul > li {
-  display: inline-block; }
-  main .filters ul > li:not(:nth-of-type(3n))::after {
-    content: "|";
-    color: #dfdfdf;
-    margin: 0 1em; }
-  main .filters ul > li > a {
+main {
+  margin-bottom: 90px; }
+  main .filters h3 {
+    font-family: Lato, sans-serif;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase; }
+  main .filters ul > li {
+    display: inline-block; }
+    main .filters ul > li:not(:nth-of-type(3n))::after {
+      content: "|";
+      color: #dfdfdf;
+      margin: 0 1em; }
+    main .filters ul > li > a {
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      color: #6f6e6e;
+      text-decoration: none; }
+      main .filters ul > li > a:hover {
+        border-bottom: 1px solid #6f6e6e; }
+  main .filters .input-group input[type="checkbox"]:checked + label::before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #f16d7f;
+    text-align: center;
+    line-height: 5px; }
+  main .filters .input-group input {
+    display: none; }
+  main .filters .input-group label {
+    color: #6f6e6e;
     font-family: Lato, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
-    color: #6f6e6e;
-    text-decoration: none; }
-    main .filters ul > li > a:hover {
-      border-bottom: 1px solid #6f6e6e; }
-main .filters .input-group input[type="checkbox"]:checked + label::before {
-  content: "\2713";
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  font-size: 18px;
-  color: #f16d7f;
-  text-align: center;
-  line-height: 5px; }
-main .filters .input-group input {
-  display: none; }
-main .filters .input-group label {
-  color: #6f6e6e;
-  font-family: Lato, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-right: 20px;
-  cursor: pointer;
-  position: relative; }
-  main .filters .input-group label::before {
-    content: "";
-    display: inline-block;
-    margin-right: 8px;
-    position: relative;
-    height: 13px;
-    width: 13px;
-    background-color: white;
+    text-transform: uppercase;
+    margin-right: 18px;
+    cursor: pointer;
+    position: relative; }
+    main .filters .input-group label::before {
+      content: "";
+      display: inline-block;
+      margin-right: 8px;
+      position: relative;
+      height: 13px;
+      width: 13px;
+      background-color: white;
+      border: 1px solid #ebebeb;
+      margin-bottom: -2px; }
+  main .sort {
+    height: 50px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 45px; }
+    main .sort .input-group {
+      display: inline-block; }
+      main .sort .input-group:not(:last-of-type) {
+        margin-right: 15px; }
+      main .sort .input-group .input-group-addon, main .sort .input-group .btn-group button {
+        height: 30px;
+        background-color: white;
+        border: 1px solid #ebebeb;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        color: #6f6e6e;
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 29px; }
+      main .sort .input-group .input-group-addon {
+        display: inline-block;
+        width: auto;
+        border-right: 0;
+        padding: 0 8px 0 12px; }
+      main .sort .input-group .btn-group {
+        display: inline-block;
+        margin-left: -2px; }
+        main .sort .input-group .btn-group button:focus {
+          outline: none !important; }
+        main .sort .input-group .btn-group.fit-width .dropdown-toggle .caret {
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          margin-top: -2px;
+          vertical-align: middle; }
+        main .sort .input-group .btn-group.fit-width .dropdown-toggle .filter-option {
+          position: relative;
+          margin-right: 20px; }
+        main .sort .input-group .btn-group button {
+          padding: 0 10px; }
+  main .products .feature-item {
+    margin-bottom: 20px; }
+  main .products-footer .pagination {
     border: 1px solid #ebebeb;
-    margin-bottom: -2px; }
-main .products .feature-item {
-  margin-bottom: 20px; }
-main .products-footer .va-btn {
-  display: inline-block;
-  width: 150px;
-  height: 44px;
-  background-color: white;
-  border: 1px solid #ef5b70;
-  border-radius: 3px;
-  color: #ef5b70;
-  font-family: Lato, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 44px;
-  text-align: center;
-  margin: 20px 0; }
-  main .products-footer .va-btn:hover {
-    background-color: #ffe2d6; }
+    border-radius: 3px; }
+    main .products-footer .pagination li > a, main .products-footer .pagination li > span > i {
+      position: relative;
+      float: left;
+      padding: 6px 12px;
+      margin-left: -1px;
+      line-height: 1.42857143;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      font-family: Lato, sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      color: #c4c4c4; }
+      main .products-footer .pagination li > a:hover, main .products-footer .pagination li > a.active-page, main .products-footer .pagination li > span > i:hover, main .products-footer .pagination li > span > i.active-page {
+        color: #ef5b70; }
+  main .products-footer .va-btn {
+    display: inline-block;
+    width: 150px;
+    height: 44px;
+    background-color: white;
+    border: 1px solid #ef5b70;
+    border-radius: 3px;
+    color: #ef5b70;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 44px;
+    text-align: center;
+    margin: 20px 0; }
+    main .products-footer .va-btn:hover {
+      background-color: #ffe2d6; }
 
 .irs-from, .irs-to, .irs-single {
   color: #6f6e6e;
@@ -1903,5 +1966,9 @@ main .products-footer .va-btn {
     text-decoration: none; }
     .left-menu #accordion .panel-body ul > li > a:hover {
       border-bottom: 1px solid #6f6e6e; }
+
+section .prem {
+  height: 341px;
+  background-color: #222224; }
 
 /*# sourceMappingURL=style2.css.map */

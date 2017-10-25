@@ -314,9 +314,6 @@ designer                                </a>
                 </div>
             </nav>
 
-
-
-
     <div class="col-lg-8">
         <div class="row">
             <div class="col-md-12">
@@ -352,7 +349,26 @@ designer                                </a>
             </div>
 
             <div class="sort col-md-12">
-
+                <div class="input-group">
+                    <span class="input-group-addon" id="sort-by">Sort By</span>
+                    <select size="5" class="selectpicker show-tick"  name="sortby" id="sort-by-select" data-width="fit">
+                        <option selected>Name</option>
+                        <option>Price Asc</option>
+                        <option>Price Desc</option>
+                        <option>Time (New First)</option>
+                        <option>Sales First</option>
+                    </select>
+                </div>
+ <div class="input-group">
+                    <span class="input-group-addon" id="sort-by">Show</span>
+                    <select size="5" class="selectpicker show-tick"  name="showme" id="show-me-select" data-width="fit">
+                        <option>06</option>
+                        <option selected>09</option>
+                        <option>12</option>
+                        <option>18</option>
+                        <option>24</option>
+                    </select>
+                </div>
             </div>
 
             <div class="products row">
@@ -493,23 +509,22 @@ designer                                </a>
                 </div>
             </div>
 
-
             <div class="products-footer col-md-6">
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
                         <li>
                             <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
+                                <span class="fa fa-angle-left " aria-hidden="true"></span>
                             </a>
                         </li>
-                        <li><a href="#">1</a></li>
+                        <li><a href="#" class="active-page">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                         <li><a href="#">4</a></li>
                         <li><a href="#">5</a></li>
                         <li>
                             <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
+                                <span class="fa fa-angle-right" aria-hidden="true"></span>
                             </a>
                         </li>
                     </ul>
@@ -524,11 +539,20 @@ designer                                </a>
     </div>
     </div>
     </div>
+
 </main>
 
+<!--Блок преимуществ-->
+<section class="row">
+<div class="container-fluid prem">
+    <div class="col-md-4">1</div>
+    <div class="col-md-4">2</div>
+    <div class="col-md-4">3</div>
+</div>
+</section>
 
 <!--Блок отзывов и подписка-->
-<div class="container-fluid test_bg testimonials">
+<div class="container-fluid test_bg">
     <hr class="test-delimeter">
     <div class="container">
         <div class="row test-container">
@@ -660,6 +684,7 @@ designer                                </a>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script>
     $("#price").ionRangeSlider({
