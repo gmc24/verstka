@@ -917,7 +917,7 @@ a:focus, a:hover {
 
 .feature-item {
   display: inline-block;
-  max-width: 263px;
+  max-width: 240px;
   text-align: center;
   background-color: #fff; }
   .feature-item:hover {
@@ -925,8 +925,10 @@ a:focus, a:hover {
 
 .f-thmb {
   width: 100%;
-  height: 281px;
   position: relative; }
+  .f-thmb img {
+    width: auto;
+    max-width: 240px; }
 
 .f-desc {
   width: 100%;
@@ -1970,5 +1972,30 @@ main {
 section .prem {
   height: 341px;
   background-color: #222224; }
+  section .prem article {
+    margin: 89px auto 98px;
+    max-width: 308px;
+    text-align: center;
+    position: relative;
+    padding-top: 63px; }
+    section .prem article > span {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto; }
+    section .prem article h4 {
+      color: #fbfbfb;
+      font-family: Lato, sans-serif;
+      font-size: 20px;
+      font-weight: 700; }
+    section .prem article p {
+      color: #fbfbfb;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: center; }
 
 /*# sourceMappingURL=style2.css.map */
