@@ -941,7 +941,10 @@ a:focus, a:hover {
   color: #222;
   font-size: 13px;
   font-weight: 400;
-  line-height: 26px; }
+  line-height: 26px;
+  text-decoration: none; }
+  .f-desc > .f-title:hover {
+    border-bottom: 1px solid #222222; }
 
 .f-desc > .f-price {
   color: #f16d7f;
@@ -973,12 +976,11 @@ a:focus, a:hover {
   text-decoration: none;
   transition-duration: 0.3s;
   transition-timing-function: linear;
-  margin: 0 auto; }
+  margin: 98px auto; }
 
 .hover-cart-btn {
   width: 100%;
-  position: absolute;
-  top: 98px; }
+  position: absolute; }
 
 .feature-item:hover .overlay-bg {
   background-color: #3a3838;

@@ -1119,6 +1119,10 @@ a:focus, a:hover {
   font-size: 13px;
   font-weight: 400;
   line-height: 26px;
+  text-decoration: none;
+  &:hover {
+    border-bottom: 1px solid #222222;
+  }
 }
 
 .f-desc > .f-price {
@@ -1154,13 +1158,13 @@ a:focus, a:hover {
   text-decoration: none;
   transition-duration: 0.3s;
   transition-timing-function: linear;
-  margin: 0 auto;
+  margin: 98px auto ;
 }
 
 .hover-cart-btn {
   width: 100%;
   position: absolute;
-  top: 98px;
+  //top: 98px;
 }
 
 .feature-item:hover .overlay-bg {
