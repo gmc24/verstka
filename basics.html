@@ -14,8 +14,12 @@
     }
 
     function getSum(arr) {
-        //
-        return arr.length;
+        var sum = 0;
+        for (var i=0; i < arr.length; i++) {
+            if (arr[i]=="J" || arr[i]=="Q" || arr[i]=="K") {sum+=10;}
+            else if (arr[i]=="A") {sum+=11;} else {sum+=parseInt(arr[i]);}
+        }
+        return sum;
     }
 
     var dealer = [getCard()];
